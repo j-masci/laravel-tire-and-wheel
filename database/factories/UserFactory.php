@@ -2,6 +2,13 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 use App\User;
+use App\Tire;
+use App\TireModel;
+use App\TireBrand;
+use App\Rim;
+use App\RimFinish;
+use App\RimModel;
+use App\RimBrand;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -25,3 +32,5 @@ $factory->define(User::class, function (Faker $faker) {
         'remember_token' => Str::random(10),
     ];
 });
+
+

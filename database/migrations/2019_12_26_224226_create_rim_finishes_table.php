@@ -13,13 +13,14 @@ class CreateRimFinishesTable extends Migration
      */
     public function up()
     {
+        // todo: both steel and alloy could potentially belong to the rim models table but it depends on real world data.
         Schema::create('rim_finishes', function (Blueprint $table) {
             $table->bigIncrements('id' );
             $table->unsignedBigInteger('model_id' );
             $table->string( 'slug' );
             $table->string( 'name' );
-            // possible that its sufficient to put this on models, but it's here for now.
-            $table->boolean( 'winter_approved' );
+            $table->string( 'type' )->default( 'steel' );
+            $table->boolean( 'winter_approved' )->default( 1 );
             $table->timestamps();
             // $table->foreign( 'rim_model_id' )->references( 'rim_model_id' )->on( 'rim_models' );
         });

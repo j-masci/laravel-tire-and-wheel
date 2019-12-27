@@ -23,19 +23,18 @@ class Tire extends Model
     ];
 
     /**
-     * For database seeding mostly.
+     * For seeding database and other things as well.
      *
      * @param $column
      * @return int|mixed
      */
-    public static function createRandomColumnValue($column)
+    public static function getRandomValue($column)
     {
-
         switch ($column) {
             case 'part_number':
-                return 't-' . uniqid('asdf');
+                return TireOrRim::createRandomPartNumber( 't-' );
             case 'model_id':
-                break;
+                return LaravelHelpers::getRandomRecordColumn( TireModel::class, 'id' );
             case 'width':
                 return Arr::random([165, 175, 185, 195, 205, 215, 225]);
             case 'profile':
@@ -51,31 +50,5 @@ class Tire extends Model
             case 'type':
                 return Arr::random(['winter', 'summer', 'all-season', 'all-weather']);
         }
-
-    }
-
-    /**
-     *
-     */
-    public function createRandomSelf()
-    {
-        $attributes = [];
-
-        $rnd = [
-            'part_number',
-            'model_id',
-            'width',
-            'profile',
-            'diameter',
-            'type',
-            'load_index_1',
-            'speed_rating',
-        ];
-
-        foreach ( $rnd as $key) {
-            $attributes[$key] = self::createRandomColumnValue($key);
-        }
-
-        return new self( $attributes );
     }
 }

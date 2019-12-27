@@ -11,6 +11,6 @@ class TireBrandSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\App\TireBrand::class, 20)->create();
     }
 }

@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c45df8f-9cda-4e6a-a127-a110b8efcd67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/TireOrRim.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/LaravelHelpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Rim.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Rim.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RimBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RimBrand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/RimFinish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RimFinish.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/RimModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RimModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Tire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tireBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tireBrand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tireModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tireModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_214931_create_tires_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_214931_create_tires_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_223434_create_rims_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_223434_create_rims_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/TireOrRim.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/TireOrRim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tireBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/TireBrand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tireModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/TireModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_224226_create_rim_finishes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_224226_create_rim_finishes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_225810_create_rim_models_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_225810_create_rim_models_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_230026_create_rim_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_230026_create_rim_brands_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_231143_create_tire_models_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_231143_create_tire_models_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_231150_create_tire_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_231150_create_tire_brands_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RimBrandSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RimBrandSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RimFinishSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RimFinishSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RimModelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RimModelSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RimSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RimSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TireBrandSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TireBrandSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TireModelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TireModelSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TireSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TireSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +140,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tire-and-wheel\app" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -167,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577381001789</updated>
       <workItem from="1577381003251" duration="2003000" />
-      <workItem from="1577396429278" duration="12837000" />
+      <workItem from="1577396429278" duration="18429000" />
     </task>
     <servers />
   </component>
@@ -179,17 +186,25 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1115" y="489" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1577415438500" />
-    <state x="1027" y="661" key="NewPhpFileDialog" timestamp="1577415703486">
+    <state x="1032" y="525" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1577420383778">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1027" y="661" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577415703486" />
+    <state x="1032" y="525" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577420383778" />
+    <state x="1027" y="661" key="NewPhpFileDialog" timestamp="1577420675081">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1027" y="661" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577420675081" />
     <state x="1007" y="401" width="606" height="804" key="find.popup" timestamp="1577412587218">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1007" y="401" width="606" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577412587218" />
-    <state x="855" y="431" width="672" height="678" key="search.everywhere.popup" timestamp="1577412745340">
+    <state x="958" y="367" key="run.anything.popup" timestamp="1577420930747">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="855" y="431" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577412745340" />
+    <state x="958" y="367" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577420930747" />
+    <state x="855" y="431" width="672" height="678" key="search.everywhere.popup" timestamp="1577423056205">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="855" y="431" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577423056205" />
   </component>
 </project>

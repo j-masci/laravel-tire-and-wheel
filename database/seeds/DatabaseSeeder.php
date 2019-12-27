@@ -14,7 +14,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            TireBrandSeeder::class,
+            TireModelSeeder::class,
             TireSeeder::class,
+            RimBrandSeeder::class,
+            RimModelSeeder::class,
+            RimFinishSeeder::class,
             RimSeeder::class,
         ]);
     }

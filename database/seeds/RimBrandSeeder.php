@@ -11,6 +11,6 @@ class RimBrandSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\App\RimBrand::class, 25)->create();
     }
 }
