@@ -1,14 +1,7 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-use App\User;
-use App\Tire;
-use App\TireModel;
-use App\TireBrand;
-use App\Rim;
-use App\RimFinish;
-use App\RimModel;
-use App\RimBrand;
+use App\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 

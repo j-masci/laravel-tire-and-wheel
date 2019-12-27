@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\RimBrand;
+use App\Models\RimBrand;
 use Faker\Generator as Faker;
 use \Illuminate\Support\Str;
 

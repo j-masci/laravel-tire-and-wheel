@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Tire;
+use App\Models\Tire;
 use Faker\Generator as Faker;
 
 $factory->define(Tire::class, function (Faker $faker) {
@@ -19,7 +19,7 @@ $factory->define(Tire::class, function (Faker $faker) {
                  'load_index_1',
                  'speed_rating',
              ] as $col) {
-        $ret[$col] = Tire::getRandomValue($col);
+        $ret[$col] = Tire::generateRandomValue($col);
     }
 
     return $ret;

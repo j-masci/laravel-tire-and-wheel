@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\TireModel;
+use App\Models\TireModel;
 use Faker\Generator as Faker;
 
 $factory->define(TireModel::class, function (Faker $faker) {
@@ -12,6 +12,6 @@ $factory->define(TireModel::class, function (Faker $faker) {
     return [
         'name' => $name,
         'slug' => Str::slug( $name ),
-        'brand_id' => \App\LaravelHelpers::getRandomRecordColumn( \App\tireBrand::class, 'id', null )
+        'brand_id' => \Core\Helpers\getRandomRecordColumn( \App\tireBrand::class, 'id', null )
     ];
 });

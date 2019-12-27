@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\TireBrand;
+use App\Models\TireBrand;
 use Faker\Generator as Faker;
 
 $factory->define(TireBrand::class, function (Faker $faker) {

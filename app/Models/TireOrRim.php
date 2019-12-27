@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 /**
- * App\Tire and App\Rim will use this.
+ * Models\Tire and Models\Rim will use this.
  *
  * Trait TireOrRim
  */
@@ -15,7 +15,7 @@ Trait TireOrRim{
      * @param string $pre
      * @return string
      */
-    public static function createRandomPartNumber( $pre = "" ){
+    public static function generateRandomPartNumber($pre = "" ){
 
         // uniqid can sometimes return the same number when called in quick succession.
         global $partNumberGeneratorGlobalCounter;

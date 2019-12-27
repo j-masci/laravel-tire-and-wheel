@@ -41,6 +41,9 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+// todo: move this
+include __DIR__ . '/../app/core/_load.php';
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

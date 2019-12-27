@@ -11,7 +11,7 @@ class TireSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Tire::class, 6000)->create();
+        factory(\App\Models\Tire::class, 6000)->create();
     }
 }
 

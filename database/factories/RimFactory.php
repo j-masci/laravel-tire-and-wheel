@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Rim;
+use App\Models\Rim;
 use Faker\Generator as Faker;
 
 $factory->define(Rim::class, function (Faker $faker) {
@@ -19,7 +19,7 @@ $factory->define(Rim::class, function (Faker $faker) {
                   'offset',
                   'center_bore'
               ] as $col ) {
-        $ret[$col] = Rim::getRandomValue( $col );
+        $ret[$col] = Rim::generateRandomValue( $col );
     }
 
     return $ret;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
@@ -28,14 +28,14 @@ class Rim extends Model
      * @param $column
      * @return int|mixed
      */
-    public static function getRandomValue($column)
+    public static function generateRandomValue($column)
     {
         // todo: random seeding of values such as offset and bolt pattern will make it very hard to find products using real vehicle data.
         switch ($column) {
             case 'part_number':
-                return TireOrRim::createRandomPartNumber( 'r-' );
+                return TireOrRim::generateRandomPartNumber( 'r-' );
             case 'finish_id':
-                return LaravelHelpers::getRandomRecordColumn( RimFinish::class, 'id' );
+                return \Core\Helpers\getRandomRecordColumn(RimFinish::class, 'id' );
             case 'width':
                 return Arr::random([ "6.0", "6.5", "7.0", "7.5", "8.0", "8.5", "9.0" ]);
             case 'diameter':

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
@@ -28,13 +28,13 @@ class Tire extends Model
      * @param $column
      * @return int|mixed
      */
-    public static function getRandomValue($column)
+    public static function generateRandomValue($column)
     {
         switch ($column) {
             case 'part_number':
-                return TireOrRim::createRandomPartNumber( 't-' );
+                return TireOrRim::generateRandomPartNumber( 't-' );
             case 'model_id':
-                return LaravelHelpers::getRandomRecordColumn( TireModel::class, 'id' );
+                return \Core\Helpers\getRandomRecordColumn( TireModel::class, 'id' );
             case 'width':
                 return Arr::random([165, 175, 185, 195, 205, 215, 225]);
             case 'profile':

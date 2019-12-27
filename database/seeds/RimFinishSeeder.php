@@ -11,6 +11,6 @@ class RimFinishSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\RimFinish::class, 400)->create();
+        factory(\App\Models\RimFinish::class, 400)->create();
     }
 }

@@ -11,6 +11,6 @@ class RimSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Rim::class, 8000)->create();
+        factory(\App\Models\Rim::class, 8000)->create();
     }
 }
