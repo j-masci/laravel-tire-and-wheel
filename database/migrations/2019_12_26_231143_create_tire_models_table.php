@@ -14,10 +14,10 @@ class CreateTireModelsTable extends Migration
     public function up()
     {
         Schema::create('tire_models', function (Blueprint $table) {
-            $table->bigIncrements( 'tire_model_id' );
-            $table->unsignedBigInteger( 'tire_brand_id' );
-            $table->string('tire_model_slug');
-            $table->string('tire_model_name');
+            $table->bigIncrements( 'id' );
+            $table->unsignedBigInteger( 'brand_id' );
+            $table->string('slug');
+            $table->string('name');
             $table->timestamps();
             // $table->foreign( 'tire_brand_id' )->references( 'tire_brand_id' )->on( 'tire_brands' );
         });

@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table( 'tire_brands' )->insert( [
-            'tire_brand_slug' => 'tire-brand-1',
-            'tire_brand_name' => 'Tire Brand 1',
+        $this->call([
+            TireSeeder::class,
+            RimSeeder::class,
         ]);
     }
 }

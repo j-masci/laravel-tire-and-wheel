@@ -14,9 +14,9 @@ class CreateTireBrandsTable extends Migration
     public function up()
     {
         Schema::create('tire_brands', function (Blueprint $table) {
-            $table->bigIncrements( 'tire_brand_id' );
-            $table->string( 'tire_brand_slug' );
-            $table->string( 'tire_brand_name' );
+            $table->bigIncrements( 'id' );
+            $table->string( 'slug' );
+            $table->string( 'name' );
             $table->timestamps();
         });
     }

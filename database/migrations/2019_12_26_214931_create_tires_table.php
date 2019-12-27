@@ -14,23 +14,23 @@ class CreateTiresTable extends Migration
     public function up()
     {
         Schema::create('tires', function (Blueprint $table) {
-            $table->bigIncrements('tire_id');
-            $table->string('tire_part_number' );
-            $table->string('tire_model_slug' );
-            $table->string('tire_brand_slug' );
-            $table->string('tire_width');
-            $table->string('tire_profile');
-            $table->string('tire_diameter');
-            $table->string('tire_type');
-            $table->string('tire_load_index_1');
-            $table->string('tire_load_index_2');
-            $table->string('tire_speed_rating');
-            $table->string('tire_is_zr');
-            $table->string('tire_sizing_system');
+            $table->bigIncrements('id');
+            $table->string('part_number' );
+            $table->string('model_id' );
+            $table->string('width');
+            $table->string('profile');
+            $table->string('diameter');
+            $table->string('type');
+            $table->string('load_index_1');
+            $table->string('load_index_2')->default( '' );
+            $table->string('speed_rating');
+            $table->boolean('is_zr')->default( false );
+
+            // todo: choose a protocol for this (lower or upper?)
+            $table->string('sizing_system')->default( 'P' );
             $table->timestamps();
             // todo: address sql errors when adding many constraints
-//            $table->foreign( 'tire_model_slug' )->references( 'tire_model_slug' )->on( 'tire_models' );
-//            $table->foreign( 'tire_brand_slug' )->references( 'tire_model_slug' )->on( 'tire_models' );
+//            $table->foreign( 'model_id' )->references( 'model_id' )->on( 'tire_models' );
         });
     }
 

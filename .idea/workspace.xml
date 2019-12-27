@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c45df8f-9cda-4e6a-a127-a110b8efcd67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/TireOrRim.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Rim.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Rim.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RimBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RimBrand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RimFinish.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RimFinish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RimModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RimModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tire.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tireBrand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tireBrand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tireModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tireModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_214931_create_tires_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_214931_create_tires_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_223434_create_rims_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_223434_create_rims_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_224226_create_rim_finishes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_224226_create_rim_finishes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_225810_create_rim_models_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_225810_create_rim_models_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_230026_create_rim_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_230026_create_rim_brands_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_231143_create_tire_models_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_231143_create_tire_models_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_26_231150_create_tire_brands_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_231150_create_tire_brands_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577381001789</updated>
       <workItem from="1577381003251" duration="2003000" />
-      <workItem from="1577396429278" duration="9116000" />
+      <workItem from="1577396429278" duration="12837000" />
     </task>
     <servers />
   </component>
@@ -165,10 +175,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1027" y="661" key="NewPhpFileDialog" timestamp="1577382024158">
+    <state x="1115" y="489" key="#com.intellij.ide.util.MemberChooser" timestamp="1577415438500">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1027" y="661" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577382024158" />
+    <state x="1115" y="489" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1577415438500" />
+    <state x="1027" y="661" key="NewPhpFileDialog" timestamp="1577415703486">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1027" y="661" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577415703486" />
     <state x="1007" y="401" width="606" height="804" key="find.popup" timestamp="1577412587218">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

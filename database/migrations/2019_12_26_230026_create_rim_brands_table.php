@@ -14,9 +14,9 @@ class CreateRimBrandsTable extends Migration
     public function up()
     {
         Schema::create('rim_brands', function (Blueprint $table) {
-            $table->bigIncrements( 'rim_brand_id' );
-            $table->string('rim_brand_slug');
-            $table->string('rim_brand_name');
+            $table->bigIncrements( 'id' );
+            $table->string('slug');
+            $table->string('name');
             $table->timestamps();
         });
     }

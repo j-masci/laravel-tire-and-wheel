@@ -15,15 +15,17 @@ class CreateRimsTable extends Migration
     {
         Schema::create('rims', function (Blueprint $table) {
             $table->bigIncrements('rim_id' );
-            $table->text('rim_part_number');
-            $table->unsignedBigInteger('rim_finish_id' );
-            $table->string('rim_width');
-            $table->string('rim_diameter');
-            $table->string('rim_offset');
-            $table->string('rim_bolt_pattern_1');
-            $table->string('rim_bolt_pattern_2');
-            $table->string('rim_center_bore');
-            $table->string('rim_type');
+            $table->text('part_number');
+            $table->unsignedBigInteger('finish_id' );
+            $table->string('width');
+            $table->string('diameter');
+            $table->string('offset');
+            $table->string('bolt_pattern_1');
+            $table->string('bolt_pattern_2')->default('');
+            $table->string('center_bore');
+
+            // steel or alloy
+            $table->string('type')->default( 'steel' );
             $table->timestamps();
             // $table->foreign( 'rim_finish_id' )->references( 'rim_finish_id' )->on( 'rim_finishes' );
         });

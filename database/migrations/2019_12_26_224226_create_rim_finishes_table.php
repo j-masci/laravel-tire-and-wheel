@@ -14,12 +14,12 @@ class CreateRimFinishesTable extends Migration
     public function up()
     {
         Schema::create('rim_finishes', function (Blueprint $table) {
-            $table->bigIncrements('rim_finish_id' );
-            $table->unsignedBigInteger('rim_model_id' );
-            $table->string( 'rim_finish_slug' );
-            $table->string( 'rim_finish_name' );
+            $table->bigIncrements('id' );
+            $table->unsignedBigInteger('model_id' );
+            $table->string( 'slug' );
+            $table->string( 'name' );
             // possible that its sufficient to put this on models, but it's here for now.
-            $table->boolean( 'rim_finish_winter_approved' );
+            $table->boolean( 'winter_approved' );
             $table->timestamps();
             // $table->foreign( 'rim_model_id' )->references( 'rim_model_id' )->on( 'rim_models' );
         });
